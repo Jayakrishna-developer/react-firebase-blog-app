@@ -1,0 +1,133 @@
+/* ViewBlogs.css */
+
+.blogs-container {
+    padding: 20px;
+    background-color: #0e0e0e;
+    /* Dark background color */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+.title-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.blogs-title {
+    font-size: 2rem;
+    color: #f8f8f8;
+    /* Light color for title */
+}
+
+.add-blog-button {
+    background-color: #007bff;
+    /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.blogs-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog-item {
+    display: flex;
+    /* Use flexbox */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #201f1f;
+    /* Darker background for each blog item */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+
+}
+
+.blog-content-container {
+    flex-grow: 1;
+    /* Allow content to take remaining space */
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: flex-start;
+    /* Align items to the start */
+    margin-right: 20px;
+    /* Space between content and image */
+        
+}
+
+.blog-author {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+    /* Light gray for author */
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: #ffffff;
+    /* White color for title */
+}
+
+.blog-content {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.img-fluid {
+    width: 200px;
+    /* Fixed width for the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10%;
+    /* Rounded corners for image */
+    
+}
+
+.like-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    /* Button color */
+    font-size: 16px;
+    /* Adjust font size */
+    display: flex;
+    /* Align icon and text */
+    align-items: center;
+}
+
+.like-button i {
+    margin-right: 5px;
+    /* Space between icon and text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 450px) {
+    .blog-item {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+       
+    }
+
+        .img-fluid {
+        width: 200px;
+        /* Image takes full width */
+        margin-left: 0px;
+        /* No left margin */
+        margin-top: 10px;
+        /* Add top margin */
+      
+    }
+
+    .blog-content-container {
+        margin-right: 0;
+        /* Remove right margin on small screens */
+    }
+}

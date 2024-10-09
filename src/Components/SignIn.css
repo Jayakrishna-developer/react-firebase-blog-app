@@ -1,0 +1,112 @@
+/* SignIn.css */
+
+body {
+    background-color: #2a2929;
+    /* Slightly lighter than black */
+    color: #ffffff;
+    /* Light text color for readability */
+    font-family: Arial, sans-serif;
+    /* Font family */
+    margin: 0;
+    padding: 0;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+.signup-card {
+    background-color: #373434;
+    /* Dark card background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 2rem;
+    /* Padding inside the card */
+    width: 400px;
+    /* Fixed width */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Shadow effect */
+}
+
+.signup-title {
+    text-align: center;
+    /* Center the title */
+    margin-bottom: 1.5rem;
+    /* Spacing below the title */
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    /* Align inputs vertically */
+}
+
+.signup-input {
+    padding: 10px;
+    /* Padding inside input fields */
+    margin-bottom: 1rem;
+    /* Space between input fields */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners for inputs */
+    background-color: #3d3d3d;
+    /* Darker gray background for inputs */
+    color: #ffffff;
+    /* Light text color for inputs */
+    font-size: 16px;
+    /* Font size for inputs */
+}
+
+.signup-button {
+    padding: 10px;
+    /* Padding for the button */
+    background-color: #007bff;
+    /* Button background color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners for button */
+    color: #ffffff;
+    /* Light text color for button */
+    font-size: 16px;
+    /* Font size for button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Transition for hover effect */
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+}
+
+.signup-links {
+    text-align: center;
+    /* Center the links */
+    margin-top: 1rem;
+    /* Space above the links */
+}
+
+.signup-link {
+    color: #ffffff;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+    display: block;
+    /* Make links block elements for spacing */
+    margin-top: 0.5rem;
+    /* Space between links */
+    transition: color 0.3s;
+    /* Transition for hover effect */
+}
+
+.signup-link:hover {
+    color: #007bff;
+    /* Change color on hover */
+}
