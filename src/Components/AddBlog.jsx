@@ -192,7 +192,7 @@ function AddBlog() {
       </div>
 
       {/* Your Blogs Section */}
-      <div className="blogs-container " >
+      <div className="blogs-container ">
         <div className="title-button-container">
           <h2 className="blogs-title">Your Blogs</h2>
           {/* Delete All Blogs Icon */}
@@ -210,8 +210,8 @@ function AddBlog() {
             blogs.map((blog) => (
               <li className="blog-item" key={blog.id}>
                 <div className="blog-content-container">
+                  <p className="blog-author">Author: {blog.author}</p>{" "}
                   <h3 className="blog-title">{blog.title}</h3>
-                  <p className="blog-author">By {blog.author}</p>{" "}
                   {/* Display the author name */}
                   <p className="blog-content">{blog.content}</p>
                   <div className="blog-footer">
@@ -235,7 +235,7 @@ function AddBlog() {
                 </div>
                 <img
                   className="image-fluid"
-                  style={{width:"200px",    borderRadius: "10%"}}
+                  style={{ width: "200px", borderRadius: "10%" }}
                   src={blog.imageUrl}
                   alt={blog.title}
                 />
