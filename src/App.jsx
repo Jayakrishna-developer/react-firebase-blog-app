@@ -3,31 +3,29 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
   Navigate,
 } from "react-router-dom";
 
 import ViewBlogs from "./Components/ViewBlogs";
-import SignUp from "./Components/Signup";
-import SignIn from "./Components/Signin";
+
+import SignIn from "./Components/SignIn";
 import AddBlog from "./Components/Addblog";
+import SignUp from "./Components/SignUpp";  // Capital "U"
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false); // Tracks authentication status
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const handleSignUp = () => {
-    setIsAuthenticated(true); // User is authenticated after sign-up
+    setIsAuthenticated(true);
   };
 
   const handleSignIn = () => {
-    setIsAuthenticated(true); // User is authenticated after sign-in
+    setIsAuthenticated(true);
   };
 
   return (
     <Router>
       <div>
-       
-
         <Routes>
           <Route path="/signup" element={<SignUp onSignUp={handleSignUp} />} />
           <Route path="/signin" element={<SignIn onSignIn={handleSignIn} />} />
@@ -41,8 +39,7 @@ function App() {
               isAuthenticated ? <ViewBlogs /> : <Navigate to="/signin" />
             }
           />
-          <Route path="/" element={<Navigate to="/signin" />} />{" "}
-          {/* Redirect to Sign In by default */}
+          <Route path="/" element={<Navigate to="/signin" />} />
         </Routes>
       </div>
     </Router>
