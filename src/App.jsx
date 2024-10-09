@@ -9,7 +9,7 @@ import {
 import ViewBlogs from "./Components/ViewBlogs";
 
 import SignIn from "./Components/SignIn";
-import AddBlog from "./Components/Addblog";
+import AddBlog from "./Components/AddBlog";
 import SignUp from "./Components/SignUpp";  // Capital "U"
 
 function App() {
